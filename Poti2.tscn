@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Poti2.gd" type="Script" id=1]
+[ext_resource path="res://poti2.png" type="Texture" id=2]
+
+[node name="Poti2" type="Sprite"]
+position = Vector2( 358, 219 )
+scale = Vector2( 31.875, 31 )
+texture = ExtResource( 2 )
+script = ExtResource( 1 )

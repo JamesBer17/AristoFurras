@@ -1,0 +1,205 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Prota.tscn" type="PackedScene" id=1]
+[ext_resource path="res://partes del tileset/suelo maderas, mejorar .png" type="Texture" id=2]
+[ext_resource path="res://partes del tileset/esquina izquierda negra.Png" type="Texture" id=3]
+[ext_resource path="res://partes del tileset/esquina derecha negra.Png" type="Texture" id=4]
+[ext_resource path="res://partes del tileset/pared derecha negra.png" type="Texture" id=5]
+[ext_resource path="res://partes del tileset/Pared central o normal negra.png" type="Texture" id=6]
+[ext_resource path="res://2dareauwuwu.gd" type="Script" id=7]
+[ext_resource path="res://LS.gd" type="Script" id=8]
+[ext_resource path="res://Pocion1.gd" type="Script" id=9]
+[ext_resource path="res://poti1.png" type="Texture" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 91.382, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 3.38273, 61.0716 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 3.5757, 45.4714 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 44.1685, 4.10856 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 13.0117, 5.35658 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 4.00586, 4.99207 )
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( -1, 0 )
+scale = Vector2( 5.61677, 5.6089 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 1
+
+[node name="EsquinaIzquierdaNegra" type="Sprite" parent="TileMap"]
+position = Vector2( 17, 16 )
+texture = ExtResource( 3 )
+
+[node name="EsquinaDerechaNegra" type="Sprite" parent="TileMap"]
+position = Vector2( 180, 16 )
+scale = Vector2( 1.1875, 1 )
+texture = ExtResource( 4 )
+
+[node name="ParedCentralONormalNegra" type="Sprite" parent="TileMap"]
+position = Vector2( 49, 16 )
+texture = ExtResource( 6 )
+
+[node name="ParedCentralONormalNegra2" type="Sprite" parent="TileMap"]
+position = Vector2( 81, 16 )
+texture = ExtResource( 6 )
+
+[node name="ParedCentralONormalNegra3" type="Sprite" parent="TileMap"]
+position = Vector2( 113, 16 )
+texture = ExtResource( 6 )
+
+[node name="ParedCentralONormalNegra4" type="Sprite" parent="TileMap"]
+position = Vector2( 145, 16 )
+texture = ExtResource( 6 )
+
+[node name="ParedDerechaNegra" type="Sprite" parent="TileMap"]
+position = Vector2( -9, 48 )
+texture = ExtResource( 5 )
+
+[node name="ParedDerechaNegra2" type="Sprite" parent="TileMap"]
+position = Vector2( -9, 80 )
+texture = ExtResource( 5 )
+
+[node name="ParedDerechaNegra3" type="Sprite" parent="TileMap"]
+position = Vector2( -9, 112 )
+texture = ExtResource( 5 )
+
+[node name="SueloMaderas,Mejorar" type="Sprite" parent="TileMap"]
+position = Vector2( 23, 48 )
+texture = ExtResource( 2 )
+
+[node name="SueloMaderas,Mejorar2" type="Sprite" parent="TileMap"]
+position = Vector2( 55, 48 )
+texture = ExtResource( 2 )
+
+[node name="SueloMaderas,Mejorar3" type="Sprite" parent="TileMap"]
+position = Vector2( 87, 48 )
+texture = ExtResource( 2 )
+
+[node name="SueloMaderas,Mejorar4" type="Sprite" parent="TileMap"]
+position = Vector2( 119, 48 )
+texture = ExtResource( 2 )
+
+[node name="SueloMaderas,Mejorar5" type="Sprite" parent="TileMap"]
+position = Vector2( 23, 80 )
+texture = ExtResource( 2 )
+
+[node name="SueloMaderas,Mejorar6" type="Sprite" parent="TileMap"]
+position = Vector2( 55, 80 )
+texture = ExtResource( 2 )
+
+[node name="SueloMaderas,Mejorar7" type="Sprite" parent="TileMap"]
+position = Vector2( 87, 80 )
+texture = ExtResource( 2 )
+
+[node name="SueloMaderas,Mejorar8" type="Sprite" parent="TileMap"]
+position = Vector2( 119, 80 )
+texture = ExtResource( 2 )
+
+[node name="SueloMaderas,Mejorar9" type="Sprite" parent="TileMap"]
+position = Vector2( 23, 112 )
+texture = ExtResource( 2 )
+
+[node name="SueloMaderas,Mejorar10" type="Sprite" parent="TileMap"]
+position = Vector2( 55, 112 )
+texture = ExtResource( 2 )
+
+[node name="SueloMaderas,Mejorar11" type="Sprite" parent="TileMap"]
+position = Vector2( 87, 112 )
+texture = ExtResource( 2 )
+
+[node name="SueloMaderas,Mejorar12" type="Sprite" parent="TileMap"]
+position = Vector2( 151, 48 )
+texture = ExtResource( 2 )
+
+[node name="SueloMaderas,Mejorar13" type="Sprite" parent="TileMap"]
+position = Vector2( 151, 80 )
+texture = ExtResource( 2 )
+
+[node name="SueloMaderas,Mejorar14" type="Sprite" parent="TileMap"]
+position = Vector2( 183, 48 )
+texture = ExtResource( 2 )
+
+[node name="SueloMaderas,Mejorar15" type="Sprite" parent="TileMap"]
+position = Vector2( 183, 80 )
+texture = ExtResource( 2 )
+
+[node name="ParedDerechaNegra4" type="Sprite" parent="TileMap"]
+position = Vector2( 182.5, 80 )
+scale = Vector2( 1.03125, 1 )
+texture = ExtResource( 5 )
+
+[node name="ParedDerechaNegra5" type="Sprite" parent="TileMap"]
+position = Vector2( 182.5, 48 )
+scale = Vector2( 1.03125, 1 )
+texture = ExtResource( 5 )
+
+[node name="ParedDerechaNegra6" type="Sprite" parent="TileMap"]
+position = Vector2( 176, 80.0066 )
+rotation = 1.56189
+scale = Vector2( 1, 1.03125 )
+texture = ExtResource( 5 )
+
+[node name="ParedDerechaNegra7" type="Sprite" parent="TileMap"]
+position = Vector2( 172.5, 121 )
+scale = Vector2( 1.03125, 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileMap"]
+position = Vector2( 0.178038, 1.06973 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 99.4753, 19.6117 )
+shape = SubResource( 1 )
+
+[node name="pared 2" type="StaticBody2D" parent="TileMap"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/pared 2"]
+position = Vector2( 3.73881, 66.761 )
+shape = SubResource( 2 )
+
+[node name="pared 3" type="StaticBody2D" parent="TileMap"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/pared 3"]
+position = Vector2( 195.293, 50.6259 )
+shape = SubResource( 3 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="TileMap"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/StaticBody2D2"]
+position = Vector2( 147.075, 92.5395 )
+shape = SubResource( 4 )
+
+[node name="KinematicBody2D2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 96.1408, 4.4572 )
+scale = Vector2( 1.97686, 1.90389 )
+
+[node name="2dareauwuwu" type="Area2D" parent="."]
+script = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="2dareauwuwu"]
+position = Vector2( 31.1418, 85.3921 )
+shape = SubResource( 5 )
+
+[node name="Pocion1" type="Area2D" parent="."]
+position = Vector2( 27.4179, 60.2614 )
+script = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pocion1"]
+position = Vector2( 0.0890217, 0 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="Pocion1"]
+texture = ExtResource( 10 )
